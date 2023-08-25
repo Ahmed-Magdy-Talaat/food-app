@@ -1,0 +1,43 @@
+:root {
+    --percentage-bar-color: #4339f2;
+    --percentage-container-bg: #dad7fe;
+    --light-gray-color: #a3a3a3;
+    --navigation-btn-bg: #e02200;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+  /*Setting side bar section*/
+  .settings-sidebar{
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .settings-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+  }
+  .settings-items ul{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .settings-items li{
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 4px;
+  }

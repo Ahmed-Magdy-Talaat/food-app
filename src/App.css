@@ -1,0 +1,136 @@
+:root {
+  --sidebar-open-width: 180px;
+  --sidebar-close-width: 60px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  /* text-align: center; */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none !important;
+}
+.container {
+  /* max-width:1024 ;  */
+  margin-inline: auto;
+  padding: 20px 60px;
+  width: 100% !important;
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100% !important;
+    margin-inline: auto;
+    padding: 20px 30px;
+  }
+}
+@media (min-width: 325px) {
+  .container {
+    max-width: 100% !important;
+    width: 100%;
+    margin-inline: auto;
+    padding: 20px 30px;
+  }
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+  padding-block: 0px;
+  padding-inline: 0 !important;
+  gap: 10px;
+}
+
+.main-div > div {
+  flex: 1;
+}
+
+.sidebar-open {
+  max-width: var(--sidebar-open-width);
+  min-width: var(--sidebar-open-width);
+  align-items: flex-start !important;
+}
+
+.sidebar-close {
+  max-width: var(--sidebar-close-width);
+  min-width: var(--sidebar-close-width);
+}
+
+.map {
+  background-color: red;
+}
+
+.sidebar-div {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
+  padding-inline: 19.5px;
+  display: flex;
+  width: auto;
+  transition: 0.5s all ease;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 50px;
+  user-select: none;
+  overflow: hidden;
+}
+.sidebar-div a {
+  color: rgb(0, 0, 0);
+  padding-block: 8px;
+  width: calc(var(--sidebar-open-width) - 19.5px * 2);
+  display: flex;
+  padding-inline: 10px;
+  position: relative;
+  right: 10px;
+  justify-content: space-between;
+}
+
+.sidebar-div a:hover {
+  color: rgb(255, 0, 0);
+  background-color: white;
+  border-radius: 5px;
+}
+
+.sidebar-div > div:first-child {
+  width: 100%;
+}
+.sidebar-div > div:last-child {
+  justify-self: flex-end;
+}
+
+.sidebar-div svg {
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.sidebar-active-link {
+  background-color: white;
+  color: black;
+}
+
+.map-container {
+  width: 100%;
+  /* height: 100%; */
+}
+.icons-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
